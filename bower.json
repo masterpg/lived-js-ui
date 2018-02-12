@@ -1,0 +1,15 @@
+{
+  "name": "lived-js-ui",
+  "authors": [
+    "masterpg@livedeveloper.net"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "polymer-decorators": "Polymer/polymer-decorators#^1.0.2",
+    "polymer": "Polymer/polymer#^2.5.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "^6.4.1",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.19"
+  }
+}

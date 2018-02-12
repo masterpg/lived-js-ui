@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>lived-js-ui</title>
+
+  <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../bower_components/polymer-decorators/polymer-decorators.js"></script>
+
+  <style>
+    lived-collapse {
+      --lived-collapse-border-color: red;
+      --lived-collapse-item-border-color: blue;
+      /*--lived-collapse-item-border-style: none;*/
+    }
+  </style>
+</head>
+<body>
+
+<script src="index.bundle.js"></script>
+
+<lived-my-element greeting="World!"></lived-my-element>
+
+<lived-collapse>
+  <lived-collapse-item header="Item 1" opened>
+    Lots of very interesting content.
+  </lived-collapse-item>
+  <lived-collapse-item header="Item 2">
+    Lots of very interesting content.
+  </lived-collapse-item>
+  <lived-collapse-item header="Item 3">
+    Lots of very interesting content.
+  </lived-collapse-item>
+</lived-collapse>
+
+</body>
+</html>
