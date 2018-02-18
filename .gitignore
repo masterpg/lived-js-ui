@@ -6,7 +6,7 @@ node_modules/
 
 /demo/**/*.js
 /demo/**/*.js.map
-/demo/src/**/*.d.ts
+/demo/**/*.d.ts
 
 /lib/**/*.js.map
 

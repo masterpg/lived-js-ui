@@ -1,4 +1,4 @@
-const { customElement, property, query } = Polymer.decorators;
+const { customElement, query } = Polymer.decorators;
 
 import '../styles/base-styles';
 import '@polymer/polymer/polymer';
@@ -29,7 +29,7 @@ export class LivedCollapse extends PolymerElement {
       <div class="container">
         <slot id="slot"></slot>
       </div>
-    `
+    `;
   }
 
   //----------------------------------------------------------------------
@@ -97,7 +97,7 @@ export class LivedCollapse extends PolymerElement {
     for (let i = 0; i < items.length; i++) {
       const item = items[i];
       if (i === items.length - 1) {
-        // 最下部のアイテムのボーダーは非表示
+        // 最下部のアイテムのボーダーは非表示にする
         // (アイテムのボーダーとコンテナの枠線がかぶるため)
         item.updateStyles({
           '--lived-collapse-item-border-style': 'none',

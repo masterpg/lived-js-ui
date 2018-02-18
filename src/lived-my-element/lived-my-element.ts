@@ -1,4 +1,4 @@
-const { customElement, property, query } = Polymer.decorators;
+const { customElement, property } = Polymer.decorators;
 
 import '../styles/base-styles';
 import '@polymer/polymer/polymer';

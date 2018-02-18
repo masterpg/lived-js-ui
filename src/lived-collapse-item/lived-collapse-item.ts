@@ -8,7 +8,10 @@ import '@polymer/iron-icon/iron-icon';
 import '@polymer/iron-icons/iron-icons';
 import '@polymer/polymer/polymer';
 import { Element as PolymerElement } from '@polymer/polymer/polymer-element';
-import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
+import {
+  GestureEventListeners,
+  GestureEventListenersConstructor
+} from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { html } from '@polymer/polymer/lib/utils/html-tag';
 
 @customElement('lived-collapse-item')
@@ -58,7 +61,7 @@ export class LivedCollapseItem extends GestureEventListeners(PolymerElement) {
       <div class="container">
         <div class="layout horizontal center-center header" on-tap="__headerOnTap">
           <iron-icon id="icon" class="icon" src="[[src]]" icon="[[icon]]"></iron-icon>
-          <div class="flex">[[header]]</div>
+          <div class="flex">[[headerText]]</div>
           <iron-icon class="toogle" icon="[[__toggleIcon]]"></iron-icon>
         </div>
         <iron-collapse class="content" opened="{{opened}}">
@@ -98,7 +101,7 @@ export class LivedCollapseItem extends GestureEventListeners(PolymerElement) {
    * ヘッダーテキストです。
    */
   @property({ type: String })
-  header: string = '';
+  headerText: string = '';
 
   /**
    * ヘッダーのアイコンです。
